@@ -1,0 +1,120 @@
+#include<windows.h>
+#include<iostream>
+#include<conio.h>
+
+void okuu();
+void gotoxy(int, int);
+
+int main(){
+	
+	okuu();
+	
+	getch();
+	return 0;
+}
+
+void gotoxy(int x1, int y1){
+	HANDLE hCon;
+	COORD dwPos;
+	
+	dwPos.X = x1;
+	dwPos.Y = y1;
+	hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleCursorPosition(hCon,dwPos);
+}
+
+void okuu(){
+	gotoxy(3,2); printf("%c",220);
+	gotoxy(13,2); printf("%c",220);
+	
+	gotoxy(3,3); printf("%c",176);
+	gotoxy(4,3); printf("%c",223);
+	gotoxy(5,3); printf("%c",223);
+	gotoxy(6,3); printf("%c",220);
+	gotoxy(7,3); printf("%c",220);
+	gotoxy(8,3); printf("%c",220);
+	gotoxy(9,3); printf("%c",220);
+	gotoxy(10,3); printf("%c",220);
+	gotoxy(11,3); printf("%c",223);
+	gotoxy(12,3); printf("%c",223);
+	gotoxy(13,3); printf("%c",176);
+	
+	gotoxy(3,4); printf("%c",220);
+	gotoxy(4,4); printf("%c",219);
+	gotoxy(5,4); printf("%c",219);
+	gotoxy(6,4); printf("%c",219);
+	gotoxy(7,4); printf("%c",219);
+	gotoxy(8,4); printf("%c",223);
+	gotoxy(9,4); printf("%c",219);
+	gotoxy(10,4); printf("%c",219);
+	gotoxy(11,4); printf("%c",219);
+	gotoxy(12,4); printf("%c",219);
+	gotoxy(13,4); printf("%c",220);
+	
+	gotoxy(3,5); printf("%c",219);
+	gotoxy(4,5); printf("%c",219);
+	gotoxy(5,5); printf("%c",223);
+	gotoxy(6,5); printf("%c",220);
+	gotoxy(10,5); printf("%c",220);
+	gotoxy(11,5); printf("%c",223);
+	gotoxy(12,5); printf("%c",15);
+	gotoxy(13,5); printf("%c",219);
+	
+	gotoxy(3,6); printf("%c",219);
+	gotoxy(7,6); printf("%c",220);
+	gotoxy(8,6); printf("%c",220);
+	gotoxy(9,6); printf("%c",220);
+	gotoxy(11,6); printf("%c",220);
+	gotoxy(12,6); printf("%c",223);
+	gotoxy(13,6); printf("%c",219);
+	
+	gotoxy(3,7); printf("%c",219);
+	gotoxy(4,7); printf("%c",223);
+	gotoxy(5,7); printf("%c",220);
+	gotoxy(6,7); printf("%c",220);
+	gotoxy(7,7); printf("%c",220);
+	gotoxy(8,7); printf("%c",219);
+	gotoxy(9,7); printf("%c",220);
+	gotoxy(10,7); printf("%c",220);
+	gotoxy(11,7); printf("%c",219);
+	gotoxy(12,7); printf("%c",176);
+	gotoxy(13,7); printf("%c",219);
+	
+	gotoxy(3,8); printf("%c",220);
+	gotoxy(4,8); printf("%c",223);
+	gotoxy(5,8); printf("%c",220);
+	gotoxy(8,8); printf("%c",64);
+	gotoxy(10,8); printf("%c",176);
+	gotoxy(11,8); printf("%c",220);
+	gotoxy(12,8); printf("%c",223);
+	gotoxy(13,8); printf("%c",176);
+	
+	gotoxy(3,9); printf("%c",220);
+	gotoxy(4,9); printf("%c",219);
+	gotoxy(5,9); printf("%c",223);
+	gotoxy(6,9); printf("%c",220);
+	gotoxy(7,9); printf("%c",220);
+	gotoxy(8,9); printf("%c",220);
+	gotoxy(9,9); printf("%c",220);
+	gotoxy(10,9); printf("%c",220);
+	gotoxy(11,9); printf("%c",223);
+	gotoxy(12,9); printf("%c",220);
+	gotoxy(13,9); printf("%c",220);
+	
+	gotoxy(3,10); printf("%c",223);
+	gotoxy(4,10); printf("%c",220);
+	gotoxy(5,10); printf("%c",219);
+	gotoxy(6,10); printf("%c",220);
+	gotoxy(7,10); printf("%c",220);
+	gotoxy(8,10); printf("%c",220);
+	gotoxy(9,10); printf("%c",220);
+	gotoxy(10,10); printf("%c",220);
+	gotoxy(11,10); printf("%c",219);
+	gotoxy(12,10); printf("%c",220);
+	
+	gotoxy(6,11); printf("%c",219);
+	gotoxy(7,11); printf("%c",220);
+	gotoxy(8,11); printf("%c",223);
+	gotoxy(9,11); printf("%c",220);
+	gotoxy(10,11); printf("%c",219);
+}
